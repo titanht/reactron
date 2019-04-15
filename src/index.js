@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from './components/App';
+import { BrowserRouter } from 'react-router-dom';
 
-// import './static/css/bootstrap.min.css';
 import "photonkit/dist/css/photon.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDom.render(
-  <App />, 
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>, 
   document.getElementById('root')
 )

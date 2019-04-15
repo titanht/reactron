@@ -1,24 +1,25 @@
 import React, { Component } from 'react'
-import Header from './common/Header';
-import Footer from './common/Footer';
-import ChatPane from './common/ChatPane';
-import Welcome from './common/Welcome';
+import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+import Sidebar from './layout/Sidebar';
+import MainRoutes from './routes/MainRoutes';
 
 export class App extends Component {
+  
   render() {
-    const name = "Harry";
     return (
       <div className="window">
-        <Header></Header>
         <div className="window-content">
-        { name ?
-            ( <ChatPane
-                /> ) :
-            ( <Welcome /> ) }
+          <div className="pane-group">
+            <div className="pane-sm sidebar">
+              <Sidebar />
+            </div>
+            <div className="pane">
+              <MainRoutes />
+            </div>
+          </div>
         </div>
-        <Footer></Footer>
       </div>
-    );
+    )
   }
 }
 
