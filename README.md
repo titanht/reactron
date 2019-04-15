@@ -6,4 +6,4 @@
 
 ### npm run dev
 
-(https://github.com/titanht/reactron/pay.png)
+![alt text](https://github.com/titanht/reactron/pay.png "Sample Output")
